@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="headline">
+    <h1>Final Project</h1>
+    
+    </div>
+    <div class="navigation">
+        <button onclick="scrollToElement('htmlCheatSheet')">HTML Cheat Sheet</button>
+        <button onclick="scrollToElement('cssCheatSheet')">CSS Cheat Sheet</button>
+        <button onclick="scrollToElement('myResume')">Resume</button>
+    </div>
+
+    <div class="tags" id="htmlCheatSheet">
+
+        <h2><span style="text-decoration: underline;"> HTML Cheat Sheet:</span></h2>
+         <h3><span style="text-decoration: underline;">Tags:</span></h3> 
+        <p> <strong><span style="text-decoration: underline;">Div:</span></strong> A div tag is used to define a section in your HTML code, this tag 
+            acts as a container for other elements so that they're easier to group together 
+            when you go to style them in a CSS page.
+        </p>
+        <p> <strong><span style="text-decoration: underline;">Headings:</span></strong> There are six different headings that can be used, these can be used to emphasize the
+            importance of the heading. For exapmle<strong> &lt;h1&gt; </strong> is used as a main heading, being the bigest and 
+            most bold out of the six headers that could be used. As the numbers increase the text size gets smaller and so does the 
+            emphasis on the header. This means that<strong> &lt;h6&gt;</strong> is the smallest header that we can make with HTML.
+            
+        </p>
+        <p> <strong><span style="text-decoration: underline;"> Paragraph&lt;p&gt;:</span> </strong>The paragraph tag is used to to define a paragraph/body of text,
+        it always starts a new line on your web page. </p>
+        <p>
+            <strong><span style="text-decoration: underline;"> Image links:</span></strong> For an image link you need to use a link to the actual image which looks something like <strong>&lt;a href= "insert link here"&gt;</strong>
+            and then you need to use the image source which should look something like this <strong>&lt;img src="insert imgae source" &gt;</strong>
+        </p>
+        <p> <strong><span style="text-decoration: underline;">Bold Text &lt;strong&gt;&lt;/strong&gt;:</span></strong> This tag is used to bold text, you cna use it in any body of text. 
+
+        </p>
+        <p><strong><span style="text-decoration: underline;">Italic text&lt;em&gt; &lt;/em&gt;:</span></strong> These tags are used to italicize the text that you use inside of them.
+
+        </p>
+        <p><strong><span style="text-decoration: underline;">Underline Text:</span> </strong> This for a tag that can be used in HTML and looks something like this<strong> &lt;span style="text-decoration:underline;"&gt; &lt;/span&gt;</strong></p>
+        <p><strong><span style="text-decoration: underline;">Comments:</span></strong> Comments in HTML code are more for the coder than the poeple reading the information that you have provided on the web page.
+        these are important pieces of information whether it is about what the code does for the page or mabe it is something that you want to hightlight about the code so that you
+        can go back and add more later. This is what a comment should look like in your code <strong>&lt; -- insert comment here --&gt;</strong>. To be clear, anything that you write within the comment wont show up on your web page 
+    it will only appear in yor lines of code. </p>
+    <p><strong><span style="text-decoration: underline;"> Line breaks &lt;br&gt;:</span></strong> Line breaks are used to create spacce between text and moving one line of text below the other. teh unique thing about this tag is that it doesn't need to be closed. </p>
+    <p> <strong><span style="text-decoration: underline;">Video: </span></strong>To add a vidoe to your web page you need to first set the height and width of the video, which looks something like this<strong> &lt;video width="" height="" controls&gt;</strong> then you need to include the video source <strong>&lt;source src="vid.source" type="vid.type"&gt;</strong>
+    and don't forget to close the video tag with <strong>&lt;/video&gt;.</strong></p>
+    </div>
+    <div class="structures">
+        <h3><span style="text-decoration: underline;">Structures:</span></h3>
+        <p>
+            <strong>Tables:</strong>To create a table in your html code you will need the Table element<strong>&lt;table&gt;</strong>, the table row element<strong>&lt;tr&gt;</strong> and the table cell elements<strong>&lt;td&gt;</strong>(regular table cells) or <strong>&lt;th&gt;</strong>(table header cells).
+        </p>
+        <p> Now to create a table like the one below our code needs to be structured like this:</p>
+        
+            &lt;table&gt;<br>
+    &lt;thead&gt;<br>
+        &lt;tr&gt;<br>
+            &lt;th&gt;Header 1&lt;/th&gt;<br>
+            &lt;th&gt;Header 2&lt;/th&gt;<br>
+            &lt;th&gt;Header 3&lt;/th&gt;<br>
+        &lt;/tr&gt;<br>
+    &lt;/thead&gt;<br>
+    &lt;tbody&gt;<br>
+        &lt;tr&gt;<br>
+            &lt;td&gt;Data 1&lt;/td&gt;<br>
+            &lt;td&gt;Data 2&lt;/td&gt;<br>
+            &lt;td&gt;Data 3&lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+        &lt;tr&gt;<br>
+            &lt;td&gt;Data 4&lt;/td&gt;<br>
+            &lt;td&gt;Data 5&lt;/td&gt;<br>
+            &lt;td&gt;Data 6&lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+        &lt;tr&gt;<br>
+            &lt;td&gt;Data 7&lt;/td&gt;<br>
+            &lt;td&gt;Data 8&lt;/td&gt;<br>
+            &lt;td&gt;Data 9&lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+    &lt;/tbody&gt;<br>
+&lt;/table&gt;<br><br>
+       
+        <table>
+            <thead>
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                    <th>Header 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data 1</td>
+                    <td>Data 2</td>
+                    <td>Data 3</td>
+                </tr>
+                <tr>
+                    <td>Data 4</td>
+                    <td>Data 5</td>
+                    <td>Data 6</td>
+                </tr>
+                <tr>
+                    <td>Data 7</td>
+                    <td>Data 8</td>
+                    <td>Data 9</td>
+                </tr>
+            </tbody>
+        </table><br>
+    
+        <p>
+            <strong>Unordered lists:</strong>These lists use two tags, these are &lt;ul&gt;(the unordered list container) and&lt;li&gt; (which represents each list item)
+        </p>
+        <p>This is how to structure those tags to create a small unordered list like the one below.</p>
+        &lt;ul&gt;<br>
+    &lt;li&gt;Item 1&lt;/li&gt;<br>
+    &lt;li&gt;Item 2&lt;/li&gt;<br>
+    &lt;li&gt;Item 3&lt;/li&gt;<br>
+&lt;/ul&gt;<br>
+
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+    
+<p><strong>Definitions list:</strong> </p>
+<p>&lt;dl&gt;this tag defines the start of the definitions list &lt;dt&gt;This tag is the term being defined &lt;dd&gt;This tag deifines the definition of the term </p>
+<p> Here is an example of how the code should be laid out:</p>
+<p>
+    &lt;dl&gt;<br>
+    &lt;dt&gt;HTML&lt;/dt&gt;<br>
+    &lt;dd&gt;Hypertext Markup Language&lt;/dd&gt;<br>
+    <br>
+    &lt;dt&gt;CSS&lt;/dt&gt;<br>
+    &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;<br>
+    <br>
+    &lt;dt&gt;JavaScript&lt;/dt&gt;<br>
+    &lt;dd&gt;A programming language that enables interactive web pages&lt;/dd&gt;
+&lt;/dl&gt;
+</p>
+<dl>
+    <dt>HTML</dt>
+    <dd>Hypertext Markup Language</dd>
+    <br>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets</dd>
+    <br>
+    <dt>JavaScript</dt>
+    <dd>A programming language that enables interactive web pages</dd>
+</dl>
+    </div>
+<div class="cssCheatSheet" id="cssCheatSheet">
+    <h2><span style="text-decoration: underline;"> CSS Cheat Sheet:</span></h2>
+    <strong><span style="text-decoration: underline;">Selectors:</span></strong>
+    <p><strong>Element Selector:</strong> Selects elements based on their element type </p>
+    <p><strong>ID Selector:</strong> Selects elements based on their id attribute</p>
+    <p><strong>Universal Selector:</strong> Selects all elements</p><br>
+    <strong><span style="text-decoration: underline;">Properties:</span></strong>
+    <p><strong>Values: </strong>Specify how those properties should be applied.</p>
+    <p><strong>Properties:</strong> Define the appearance of HTML elements.</p>
+    <p><strong>Comments:</strong>We use /*insert comment here*/ to write a comment into the code that cannot be seen on the webpage.</p>
+    <br>
+    <strong><span style="text-decoration: underline;"> Box Model:</span></strong>
+    <p><strong>Content:</strong>The content of the box, where text and images appear.</p>
+    <p><strong> Padding:</strong>The space between the content and the border.</p>
+    <p><strong>Border:</strong>The border surrounding the padding.</p>
+    <p><strong>Margin:</strong>The space outside the border, separating it from other elements.</p><br>
+    <p><strong><span style="text-decoration: underline;"> Layout:</span></strong></p>
+    <p><strong>Static:</strong>Default positioning.</p>
+    <p><strong>Relative:</strong>Positioned relative to its normal position.</p>
+    <p><strong>Sticky:</strong>Like relativepositioning until it reaches a certain point and then it acts like fixed.</p>
+    <p><strong>Fixed:</strong>Positioned relative to the viewport.</p>
+    <p><strong>Absolute:</strong> Positioned relative to the nearest positioned ancestor.</p>
+    <br>
+    <strong><span style="text-decoration: underline;"> Display:</span></strong>
+    <p><strong>Block:</strong>Takes up all the width available.</p>
+    <p><strong>inline:</strong>Takes up only the necessary width.</p>
+    <p><strong>Inline-/block:</strong>Combines the features of the block and inline elements.</p>
+    <br>
+    <strong><span style="text-decoration: underline;"> Float:</span></strong>
+    <p><strong>Left:</strong>Flosts the element to the left hand side.</p>
+    <p><strong>Right:</strong>Floats elements to the right hand side.</p>
+    <p><strong>None:</strong>Sets to default so there is no float.</p>
+
+</div>
+
+<div class="myResume" id="myResume";>
+    <h2><span style="text-decoration: underline;"> My Resume:</span></h2>
+    <h3>Amy Cooper</h3>
+    <p><span style="text-decoration: underline;"> Objective:</span><br>
+    Motivated software development student with a passion for coding and problem-solving.
+         Seeking new opportunities to work on technical skills to contribute to projects.</p><br>
+
+         <p><span style="text-decoration: underline;"> Education:</span><br>
+           Software development diploma (Expected Graduation: [April, 2025])
+            [Bow Valley College], [Calgary, Alberta]</p><br />
+            <p><span style="text-decoration: underline;"> Relevant Coursework:</span><br>
+            Web Development, Programming (C++), Math for the computer indusrty, Internet of things and
+             Essential skills for teams collaboration.</p><br>
+             <p> <span style="text-decoration: underline;">Programming Languages:</span><br>
+            C++, C#, HTML, CSS, JavaScript</p>
+            <script>
+                function scrollToElement(id) {
+                    var element = document.getElementById(id);
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            </script>
+
+
+</div>
+</body>
+</html>
+    
+</body>
+</html>

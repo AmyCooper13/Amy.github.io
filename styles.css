@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    color: aliceblue;
+    background-color: #131212; 
+    margin: 0;
+    padding: 0;
+}
+
+.headline {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navigation {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+}
+
+.navigation button {
+    padding: 10px 20px; 
+    font-size: 16px; 
+    background-color: #d17bb4;
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.navigation button:hover {
+    background-color: #d17bb4; 
+    color: #fff; 
+}
+
+.navigation button:not(:last-child) {
+    margin-right: 10px; 
+}
+
+.tags, .structures {
+    font-size: 16px; 
+    max-width: 800px; 
+    margin: 20px auto; 
+    padding: 20px;
+    border: 3px solid #ccc;
+    background-color: #333030;
+    border-radius: 8px;
+    color:aliceblue;
+}
+
+.tags h3, .structures h3 {
+    margin-top: 0;
+    color:aliceblue;
+}
+
+.tags p, .structures p {
+    line-height: 1.5; 
+}
+table {
+    border: 1px solid black; 
+    border-collapse: collapse; 
+}
+th, td {
+    border: 1px solid black; 
+    padding: 8px; 
+}
+.cssCheatSheet {
+    font-size: 16px; 
+    max-width: 800px; 
+    margin: 20px auto; 
+    padding: 20px;
+    border: 3px solid #ccc;
+    background-color: #520237;
+    border-radius: 8px;
+    color:aliceblue;
+}
+.myResume {
+    font-size: 16px; 
+    max-width: 800px; 
+    margin: 20px auto; 
+    padding: 20px;
+    border: 3px solid #ccc;
+    background-color: #08043b;
+    border-radius: 8px;
+    color:aliceblue;
+}
+.myResume {
+    text-align: center; 
+}
+
+.myResume h2, .myResume h3 {
+    text-align: center;
+}
+
+.myResume p {
+    text-align: left; 
+   
+}
+
